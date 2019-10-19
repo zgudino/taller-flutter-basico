@@ -21,7 +21,36 @@ class Home extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      body: Container(
+        padding: EdgeInsets.symmetric(
+          horizontal: 16.0,
+        ),
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: <Widget>[
+            Text(
+              "Silver Salmon Creek",
+              style: TextStyle(fontSize: 28.0),
+            ),
+            SizedBox(
+              height: 12.0,
+            ),
+            Row(
+              children: <Widget>[
+                Text(
+                  "Lake Clark National Park and Preserve",
+                  style: TextStyle(fontSize: 18.0),
+                ),
+                Spacer(),
+                Text("Alaska"),
+              ],
+            )
+          ],
+        ),
+      ),
+    );
   }
 
   Home({this.title});
